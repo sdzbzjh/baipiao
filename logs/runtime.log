@@ -1,0 +1,22 @@
+2023-09-05 11:21:40 | INFO - prelude- {'action': 'Checking the operating environment'}
+2023-09-05 11:21:40 | DEBUG - Downloading resource- {'url': 'https://raw.githubusercontent.com/QIN2DIM/hcaptcha-challenger/main/src/objects.yaml', 'to': '/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/objects.yaml'}
+2023-09-05 11:21:41 | INFO - Reloading the local cache of Assets- {'assets_dir': '/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/_assets'}
+2023-09-05 11:21:41 | DEBUG - Pulling Assets index file- {'url': 'https://api.github.com/repos/QIN2DIM/hcaptcha-challenger/releases'}
+2023-09-05 11:21:45 | INFO - execute task- {'name': 'claim_epic_games'}
+2023-09-05 11:21:45 | INFO - claim_epic_games- {'action': 'Try to flush cookie'}
+2023-09-05 11:21:49 | INFO - login- {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-09-05 11:21:50 | INFO - login-with-epic- {'url': 'https://www.epicgames.com/id/login/epic?lang=en-US&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Ffree-games'}
+2023-09-05 11:21:54 | DEBUG - claim_weekly_games- {'action': 'handle challenge'}
+2023-09-05 11:21:55 | DEBUG - Downloading resource- {'url': 'https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/animalhead_yolov8s.onnx', 'to': '/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/animalhead_yolov8s.onnx'}
+2023-09-05 11:22:00 | DEBUG - handle challenge- {'result': 'success'}
+2023-09-05 11:22:33 | INFO - login- {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-09-05 11:22:33 | INFO - login-with-epic- {'url': 'https://www.epicgames.com/id/login/epic?lang=en-US&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Ffree-games'}
+2023-09-05 11:22:38 | DEBUG - claim_weekly_games- {'action': 'handle challenge'}
+2023-09-05 11:22:38 | DEBUG - Downloading resource- {'url': 'https://github.com/QIN2DIM/hcaptcha-challenger/releases/download/model/crumpled_paper_ball.onnx', 'to': '/opt/hostedtoolcache/Python/3.10.12/x64/lib/python3.10/site-packages/hcaptcha_challenger/onnx/models/crumpled_paper_ball.onnx'}
+2023-09-05 11:22:46 | DEBUG - handle challenge- {'result': 'success'}
+2023-09-05 11:23:19 | INFO - login- {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-09-05 11:23:20 | INFO - login-with-epic- {'url': 'https://www.epicgames.com/id/login/epic?lang=en-US&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Ffree-games'}
+2023-09-05 11:23:24 | DEBUG - claim_weekly_games- {'action': 'handle challenge'}
+2023-09-05 11:23:33 | DEBUG - handle challenge- {'result': 'success'}
+2023-09-05 11:24:03 | CRITICAL - Failed to flush token- {'agent': 'EpicGames'}
+2023-09-05 11:24:03 | ERROR - claim_epic_games- {'action': 'Exit test case', 'reason': 'Failed to flush token'}

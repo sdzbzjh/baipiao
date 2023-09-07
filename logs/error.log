@@ -1,2 +1,0 @@
-2023-09-05 11:24:03 | CRITICAL - Failed to flush token- {'agent': 'EpicGames'}
-2023-09-05 11:24:03 | ERROR - claim_epic_games- {'action': 'Exit test case', 'reason': 'Failed to flush token'}

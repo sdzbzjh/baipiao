@@ -1,12 +1,30 @@
-2023-10-06 07:21:38 | INFO    | __main__:from_epic:40 | run - {'stage': 'Initialization EpicPlayer'}
-2023-10-06 07:21:44 | INFO    | __main__:claim_epic_games:86 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-10-06 07:21:48 | INFO    | services.agents.epic_games:_login:94 | login - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-10-06 07:21:49 | INFO    | services.agents.epic_games:_login:96 | login-with-epic - {'url': 'https://www.epicgames.com/id/login/epic?lang=en-US&redirect_uri=https%3A%2F%2Fstore.epicgames.com%2Fen-US%2Ffree-games'}
-2023-10-06 07:21:54 | DEBUG    | services.agents.epic_games:_login:108 | claim_weekly_games - {'action': 'handle challenge'}
-2023-10-06 07:21:55 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_match_solution:343 | match model - {'resnet': 'car_without_a_roof2309.onnx', 'prompt': 'Please click each image containing a car without a rοοf'}
-2023-10-06 07:22:02 | DEBUG    | services.agents.epic_games:_login:111 | handle challenge - {'result': 'success'}
-2023-10-06 07:22:07 | SUCCESS    | services.agents.epic_games:_login:129 | login - {'result': 'token has not expired'}
-2023-10-06 07:22:18 | SUCCESS    | services.agents.epic_games:flush_token:150 | flush_token - {'path': PosixPath('/home/runner/work/baipiao/baipiao/epic/user_data_dir/epic-games@934175043/ctx_cookie.json')}
-2023-10-06 07:22:20 | DEBUG    | __main__:create_tasks:55 | Put task - {'title': 'Godlike Burger', 'url': 'https://store.epicgames.com/en-US/p/godlike-burger-4150a0'}
-2023-10-06 07:22:20 | INFO    | services.agents.epic_games:claim_weekly_games:164 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/godlike-burger-4150a0'}
-2023-10-06 07:22:57 | SUCCESS    | services.agents.epic_games:claim_weekly_games:184 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
+2023-10-13 07:20:46 | INFO    | __main__:from_epic:40 | run - {'stage': 'Initialization EpicPlayer'}
+2023-10-13 07:20:50 | INFO    | __main__:claim_epic_games:86 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-10-13 07:20:50 | SUCCESS    | services.agents.epic_games:_login:129 | login - {'result': 'token has not expired'}
+2023-10-13 07:21:00 | SUCCESS    | services.agents.epic_games:flush_token:150 | flush_token - {'path': PosixPath('/home/runner/work/baipiao/baipiao/epic/user_data_dir/epic-games@934175043/ctx_cookie.json')}
+2023-10-13 07:21:01 | WARNING    | services.agents.epic_games:get_order_history:301 | Failed to get order history, cookie may have expired - {}
+2023-10-13 07:21:02 | ERROR    | __main__:run:126 | An error has been caught in function 'run', process 'MainProcess' (3619), thread 'MainThread' (140027526892608): - {}
+Traceback (most recent call last):
+  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 130, in <module>
+    asyncio.run(run())
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+> File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 126, in run
+    await agent.stash()
+  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 120, in stash
+    await self.claim_epic_games(context)
+  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 95, in claim_epic_games
+    self.create_tasks()
+  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 53, in create_tasks
+    self._pros = get_promotions()
+  File "/home/runner/work/baipiao/baipiao/epic/src/services/agents/epic_games.py", line 261, in get_promotions
+    query = promotion["catalogNs"]["mappings"][0]["pageSlug"]
+TypeError: 'NoneType' object is not subscriptable

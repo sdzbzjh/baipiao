@@ -1,6 +1,6 @@
-2023-10-26 08:21:01 | ERROR    | __main__:run:144 | An error has been caught in function 'run', process 'MainProcess' (3667), thread 'MainThread' (140688488066112): - {}
+2023-10-27 07:21:23 | ERROR    | __main__:run:155 | An error has been caught in function 'run', process 'MainProcess' (3558), thread 'MainThread' (139874655538048): - {}
 Traceback (most recent call last):
-  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 148, in <module>
+  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 159, in <module>
     asyncio.run(run())
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
     return loop.run_until_complete(main)
@@ -12,11 +12,11 @@ Traceback (most recent call last):
     handle._run()
   File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
     self._context.run(self._callback, *self._args)
-> File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 144, in run
+> File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 155, in run
     await agent.stash()
-  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 137, in stash
+  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 148, in stash
     await self.claim_epic_games(context)
-  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 116, in claim_epic_games
+  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 120, in claim_epic_games
     await epic.claim_weekly_games(page, single_promotions)
   File "/home/runner/work/baipiao/baipiao/epic/src/epic_games/agent.py", line 248, in claim_weekly_games
     await expect(cta_btn).to_have_text("View In Cart")

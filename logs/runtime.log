@@ -1,11 +1,12 @@
-2023-10-27 07:20:39 | INFO    | __main__:stash:129 | run - {'image': '20231026', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-10-27 07:20:52 | INFO    | __main__:claim_epic_games:95 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-10-27 07:20:55 | SUCCESS    | epic_games.agent:_login:203 | login - {'result': 'Successfully refreshed tokens'}
-2023-10-27 07:21:09 | SUCCESS    | epic_games.agent:flush_token:224 | flush_token - {'path': PosixPath('/home/runner/work/baipiao/baipiao/epic/user_data_dir/epic-games@934175043/ctx_cookie.json')}
-2023-10-27 07:21:10 | WARNING    | epic_games.agent:get_order_history:389 | Failed to get order history, cookie may have expired - {}
-2023-10-27 07:21:10 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'The Evil Within 2', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
-2023-10-27 07:21:10 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
-2023-10-27 07:21:23 | ERROR    | __main__:run:155 | An error has been caught in function 'run', process 'MainProcess' (3558), thread 'MainThread' (139874655538048): - {}
+2023-10-28 07:19:38 | INFO    | __main__:stash:129 | run - {'image': '20231026', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-10-28 07:19:48 | INFO    | __main__:claim_epic_games:95 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-10-28 07:19:51 | SUCCESS    | epic_games.agent:_login:203 | login - {'result': 'Successfully refreshed tokens'}
+2023-10-28 07:20:02 | SUCCESS    | epic_games.agent:flush_token:224 | flush_token - {'path': PosixPath('/home/runner/work/baipiao/baipiao/epic/user_data_dir/epic-games@934175043/ctx_cookie.json')}
+2023-10-28 07:20:02 | WARNING    | epic_games.agent:get_order_history:389 | Failed to get order history, cookie may have expired - {}
+2023-10-28 07:20:03 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'Tandem: A Tale of Shadows', 'url': 'https://store.epicgames.com/en-US/p/tandem-a-tale-of-shadows-c3f55e'}
+2023-10-28 07:20:03 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'The Evil Within 2', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
+2023-10-28 07:20:03 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/tandem-a-tale-of-shadows-c3f55e'}
+2023-10-28 07:20:15 | ERROR    | __main__:run:155 | An error has been caught in function 'run', process 'MainProcess' (3578), thread 'MainThread' (140663859370880): - {}
 Traceback (most recent call last):
   File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 159, in <module>
     asyncio.run(run())

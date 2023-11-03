@@ -1,41 +1,12 @@
-2023-10-28 07:19:38 | INFO    | __main__:stash:129 | run - {'image': '20231026', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
-2023-10-28 07:19:48 | INFO    | __main__:claim_epic_games:95 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-10-28 07:19:51 | SUCCESS    | epic_games.agent:_login:203 | login - {'result': 'Successfully refreshed tokens'}
-2023-10-28 07:20:02 | SUCCESS    | epic_games.agent:flush_token:224 | flush_token - {'path': PosixPath('/home/runner/work/baipiao/baipiao/epic/user_data_dir/epic-games@934175043/ctx_cookie.json')}
-2023-10-28 07:20:02 | WARNING    | epic_games.agent:get_order_history:389 | Failed to get order history, cookie may have expired - {}
-2023-10-28 07:20:03 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'Tandem: A Tale of Shadows', 'url': 'https://store.epicgames.com/en-US/p/tandem-a-tale-of-shadows-c3f55e'}
-2023-10-28 07:20:03 | DEBUG    | __main__:create_tasks:64 | Put task - {'title': 'The Evil Within 2', 'url': 'https://store.epicgames.com/en-US/p/the-evil-within-2'}
-2023-10-28 07:20:03 | INFO    | epic_games.agent:claim_weekly_games:232 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/tandem-a-tale-of-shadows-c3f55e'}
-2023-10-28 07:20:15 | ERROR    | __main__:run:155 | An error has been caught in function 'run', process 'MainProcess' (3578), thread 'MainThread' (140663859370880): - {}
-Traceback (most recent call last):
-  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 159, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 155, in run
-    await agent.stash()
-  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 148, in stash
-    await self.claim_epic_games(context)
-  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 120, in claim_epic_games
-    await epic.claim_weekly_games(page, single_promotions)
-  File "/home/runner/work/baipiao/baipiao/epic/src/epic_games/agent.py", line 248, in claim_weekly_games
-    await expect(cta_btn).to_have_text("View In Cart")
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 20080, in to_have_text
-    await self._impl_obj.to_have_text(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_assertions.py", line 455, in to_have_text
-    await self._expect_impl(
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_assertions.py", line 70, in _expect_impl
-    raise AssertionError(f"{out_message}\nActual value: {actual} {log}")
-AssertionError: Locator expected to have text 'View In Cart'
-Actual value: None 
-Call log:
-LocatorAssertions.to_have_text with timeout 5000ms
-waiting for locator("xpath=//aside//button[@data-testid='add-to-cart-cta-button']")
+2023-11-04 07:20:56 | INFO    | __main__:stash:140 | run - {'image': '20231029', 'version': '0.9.3', 'role': 'EpicPlayer', 'headless': True, 'self_supervised': True}
+2023-11-04 07:21:05 | INFO    | __main__:claim_epic_games:96 | Try to flush cookie - {'task': 'claim_epic_games'}
+2023-11-04 07:21:09 | INFO    | epic_games.agent:_login:186 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
+2023-11-04 07:21:13 | DEBUG    | epic_games.agent:insert_challenge:164 | Attack challenge - {'stage': 'email_exists_prod'}
+2023-11-04 07:21:14 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:396 | rank model - {'resnet': 'nested_smallest_zebra2309.onnx', 'prompt': 'Please click on each image containing the smallest animal.'}
+2023-11-04 07:21:19 | DEBUG    | epic_games.agent:insert_challenge:167 | Parse result - {'stage': 'email_exists_prod', 'result': 'success'}
+2023-11-04 07:21:25 | DEBUG    | epic_games.agent:insert_challenge:158 | Attack challenge - {'stage': 'login_prod'}
+2023-11-04 07:21:25 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_rank_models:396 | rank model - {'resnet': 'nested_smallest_zebra2309.onnx', 'prompt': 'Please click on each image containing the smallest аnіmаl.'}
+2023-11-04 07:21:30 | DEBUG    | epic_games.agent:insert_challenge:167 | Parse result - {'stage': 'login_prod', 'result': 'success'}
+2023-11-04 07:21:34 | SUCCESS    | epic_games.agent:_login:202 | login - {'result': 'Successfully refreshed tokens'}
+2023-11-04 07:21:48 | SUCCESS    | epic_games.agent:flush_token:229 | flush_token - {'path': PosixPath('/home/runner/work/baipiao/baipiao/epic/user_data_dir/epic-games@934175043/ctx_cookie.json')}
+2023-11-04 07:21:49 | SUCCESS    | __main__:claim_epic_games:107 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'claim-games'}

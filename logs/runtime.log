@@ -1,31 +1,4 @@
-2023-12-04 06:26:00 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post1', 'role': 'EpicPlayer', 'headless': True}
-2023-12-04 06:26:08 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
-2023-12-04 06:26:10 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-12-04 06:26:14 | DEBUG    | epic_games.agent:insert_challenge:215 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-12-04 06:26:44 | ERROR    | hcaptcha_challenger.agents.playwright.control:execute:615 | task interrupt <backcall> - {'reason': 'Failed to obtain challenge task'}
-2023-12-04 06:26:44 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_BACKCALL: 'backcall'>}
-2023-12-04 06:27:15 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 0}
-2023-12-04 06:27:17 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games'}
-2023-12-04 06:27:21 | DEBUG    | epic_games.agent:insert_challenge:215 | Attack challenge - {'stage': 'email_exists_prod'}
-2023-12-04 06:27:21 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on the object that appears only once.'}
-2023-12-04 06:27:23 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_unique_object:333 | handle task - {'select_model': 'appears_only_once_2309_yolov8s-seg.onnx', 'trident': 'find_unique_object', 'ash': 'please click on the object that appears only once default'}
-2023-12-04 06:27:26 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_unique_object:333 | handle task - {'select_model': 'appears_only_once_2309_yolov8s-seg.onnx', 'trident': 'find_unique_object', 'ash': 'please click on the object that appears only once default'}
-2023-12-04 06:27:28 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'email_exists_prod', 'result': <Status.CHALLENGE_SUCCESS: 'success'>}
-2023-12-04 06:27:33 | DEBUG    | epic_games.agent:insert_challenge:209 | Attack challenge - {'stage': 'login_prod'}
-2023-12-04 06:27:33 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on objects used for personal trаnѕрortation.'}
-2023-12-04 06:27:34 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on objects used for personal transportation.', "This is a picture that don't look like please click on objects used for personal transportation."], 'prompt': 'Please click on objects used for personal trаnѕрortation.', 'timit': '0.815s'}
-2023-12-04 06:27:45 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'login_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
-2023-12-04 06:27:48 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on objects related to technology and elесtroniсs.'}
-2023-12-04 06:27:49 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on objects related to technology and electronics.', "This is a picture that don't look like please click on objects related to technology and electronics."], 'prompt': 'Please click on objects related to technology and elесtroniсs.', 'timit': '0.730s'}
-2023-12-04 06:28:03 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'login_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
-2023-12-04 06:28:07 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on objects that can be found in сonѕtruсtіοn.'}
-2023-12-04 06:28:08 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on objects that can be found in construction.', "This is a picture that don't look like please click on objects that can be found in construction."], 'prompt': 'Please click on objects that can be found in сonѕtruсtіοn.', 'timit': '0.734s'}
-2023-12-04 06:28:19 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'login_prod', 'result': <Status.CHALLENGE_RETRY: 'retry'>}
-2023-12-04 06:28:23 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on the head of the аnіmal'}
-2023-12-04 06:28:28 | DEBUG    | hcaptcha_challenger.agents.playwright.control:lookup_objects:317 | handle task - {'catch_model': 'head_of_the_animal_turtle_2309_yolov8s.onnx', 'ash': 'please click on the head of the animal default'}
-2023-12-04 06:28:37 | DEBUG    | epic_games.agent:insert_challenge:218 | Parse result - {'stage': 'login_prod', 'result': <Status.CHALLENGE_SUCCESS: 'success'>}
-2023-12-04 06:28:40 | SUCCESS    | epic_games.agent:_login:253 | login - {'result': 'Successfully refreshed tokens'}
-2023-12-04 06:28:50 | SUCCESS    | epic_games.agent:flush_token:280 | flush_token - {'path': PosixPath('/home/runner/work/baipiao/baipiao/epic/user_data_dir/epic-games@934175043/ctx_cookie.json')}
-2023-12-04 06:28:50 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Mighty Fight Federation', 'url': 'https://store.epicgames.com/en-US/p/mighty-fight-federation'}
-2023-12-04 06:28:50 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Jitsu Squad', 'url': 'https://store.epicgames.com/en-US/p/jitsu-squad-af3f2f'}
-2023-12-04 06:28:50 | SUCCESS    | __main__:claim_epic_games:108 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'claim-games'}
+2023-12-05 06:27:30 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post1', 'role': 'EpicPlayer', 'headless': True}
+2023-12-05 06:27:35 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Mighty Fight Federation', 'url': 'https://store.epicgames.com/en-US/p/mighty-fight-federation'}
+2023-12-05 06:27:35 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Jitsu Squad', 'url': 'https://store.epicgames.com/en-US/p/jitsu-squad-af3f2f'}
+2023-12-05 06:27:35 | SUCCESS    | __main__:prelude_with_context:85 | Pass claim task - {'reason': 'All free games are in my library', 'stage': 'context-prelude'}

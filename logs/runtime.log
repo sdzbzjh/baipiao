@@ -1,24 +1,23 @@
-2023-12-14 06:27:24 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2023-12-14 06:27:30 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Destiny 2: Legacy Collection', 'url': 'https://store.epicgames.com/en-US/p/destiny-2--legacy-collection-2023'}
-2023-12-14 06:27:34 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/destiny-2--legacy-collection-2023'}
-2023-12-14 06:27:43 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-14 06:27:46 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-14 06:27:51 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click each image containing a kitchen appliance'}
-2023-12-14 06:27:52 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like kitchen appliance.', "This is a picture that don't look like kitchen appliance."], 'prompt': 'Please click each image containing a kitchen appliance', 'timit': '0.968s'}
-2023-12-14 06:27:59 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-14 06:28:31 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/destiny-2--legacy-collection-2023'}
-2023-12-14 06:28:40 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-14 06:28:42 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-14 06:28:47 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Pleаse click οn all imageѕ containing fooԁ'}
-2023-12-14 06:28:48 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like food.', "This is a picture that don't look like food."], 'prompt': 'Pleаse click οn all imageѕ containing fooԁ', 'timit': '0.757s'}
-2023-12-14 06:28:58 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-14 06:29:30 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/destiny-2--legacy-collection-2023'}
-2023-12-14 06:29:38 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-14 06:29:41 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-14 06:29:46 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Plеaѕe clіck on all imageѕ containіng food'}
-2023-12-14 06:29:47 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like food.', "This is a picture that don't look like food."], 'prompt': 'Plеaѕe clіck on all imageѕ containіng food', 'timit': '0.721s'}
-2023-12-14 06:29:57 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-14 06:30:28 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3648), thread 'MainThread' (140182103636864): - {}
+2023-12-15 06:28:28 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2023-12-15 06:28:34 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Destiny 2: Legacy Collection', 'url': 'https://store.epicgames.com/en-US/p/destiny-2--legacy-collection-2023'}
+2023-12-15 06:28:39 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/destiny-2--legacy-collection-2023'}
+2023-12-15 06:28:48 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-15 06:28:50 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-15 06:28:55 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Plеаse clіck аt the ѕtar'}
+2023-12-15 06:29:00 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-15 06:29:33 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/destiny-2--legacy-collection-2023'}
+2023-12-15 06:29:41 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-15 06:29:44 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-15 06:29:49 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Pleasе selеct each picture showing a fruit'}
+2023-12-15 06:29:50 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please select each picture showing a fruit.', "This is a picture that don't look like please select each picture showing a fruit."], 'prompt': 'Pleasе selеct each picture showing a fruit', 'timit': '0.980s'}
+2023-12-15 06:30:01 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-15 06:30:33 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/destiny-2--legacy-collection-2023'}
+2023-12-15 06:30:42 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-15 06:30:44 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-15 06:30:49 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click each image containing a rug'}
+2023-12-15 06:30:50 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like rug.', "This is a picture that don't look like rug."], 'prompt': 'Please click each image containing a rug', 'timit': '0.755s'}
+2023-12-15 06:31:01 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-15 06:31:33 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3741), thread 'MainThread' (140073884298112): - {}
 Traceback (most recent call last):
   File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 151, in stash
     await self.claim_epic_games(context)

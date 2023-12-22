@@ -1,24 +1,24 @@
-2023-12-22 06:26:47 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2023-12-22 06:26:53 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Melvor Idle', 'url': 'https://store.epicgames.com/en-US/p/melvor-idle-b6a9b3'}
-2023-12-22 06:26:57 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/melvor-idle-b6a9b3'}
-2023-12-22 06:27:09 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-22 06:27:11 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-22 06:27:16 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on all images containing liquid water.'}
-2023-12-22 06:27:18 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like liquid water.', "This is a picture that don't look like liquid water."], 'prompt': 'Please click on all images containing liquid water.', 'timit': '0.955s'}
-2023-12-22 06:27:29 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-22 06:28:01 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/melvor-idle-b6a9b3'}
-2023-12-22 06:28:10 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-22 06:28:12 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-22 06:28:17 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Plеаse click on all images containing liquid watеr.'}
-2023-12-22 06:28:18 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like liquid water.', "This is a picture that don't look like liquid water."], 'prompt': 'Plеаse click on all images containing liquid watеr.', 'timit': '0.834s'}
-2023-12-22 06:28:29 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-22 06:29:02 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/melvor-idle-b6a9b3'}
-2023-12-22 06:29:10 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-22 06:29:12 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-22 06:29:17 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Ρlease click on all imаges containing liquid water.'}
-2023-12-22 06:29:18 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like liquid water.', "This is a picture that don't look like liquid water."], 'prompt': 'Ρlease click on all imаges containing liquid water.', 'timit': '0.721s'}
-2023-12-22 06:29:30 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-22 06:30:02 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3564), thread 'MainThread' (139985539918720): - {}
+2023-12-23 06:26:40 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2023-12-23 06:26:45 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Art of Rally', 'url': 'https://store.epicgames.com/en-US/p/art-of-rally'}
+2023-12-23 06:26:50 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/art-of-rally'}
+2023-12-23 06:26:58 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-23 06:27:01 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-23 06:27:06 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please cliсk on all images containing liquid water.'}
+2023-12-23 06:27:07 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like liquid water.', "This is a picture that don't look like liquid water."], 'prompt': 'Please cliсk on all images containing liquid water.', 'timit': '0.914s'}
+2023-12-23 06:27:18 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-23 06:27:50 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/art-of-rally'}
+2023-12-23 06:27:59 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-23 06:28:02 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-23 06:28:07 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click οn all images containing liquid watеr.'}
+2023-12-23 06:28:08 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like liquid water.', "This is a picture that don't look like liquid water."], 'prompt': 'Please click οn all images containing liquid watеr.', 'timit': '0.771s'}
+2023-12-23 06:28:19 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-23 06:28:51 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/art-of-rally'}
+2023-12-23 06:29:00 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-23 06:29:02 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-23 06:29:07 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on all images containing liquid water.'}
+2023-12-23 06:29:08 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like liquid water.', "This is a picture that don't look like liquid water."], 'prompt': 'Please click on all images containing liquid water.', 'timit': '0.718s'}
+2023-12-23 06:29:19 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-23 06:29:51 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3516), thread 'MainThread' (140553234406272): - {}
 Traceback (most recent call last):
   File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 151, in stash
     await self.claim_epic_games(context)

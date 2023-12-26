@@ -1,50 +1,24 @@
-2023-12-26 06:26:39 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2023-12-26 06:26:44 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': "The Outer Worlds: Spacer's Choice Edition", 'url': 'https://store.epicgames.com/en-US/p/the-outer-worlds-spacers-choice-edition'}
-2023-12-26 06:26:48 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-outer-worlds-spacers-choice-edition'}
-2023-12-26 06:26:56 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-26 06:26:58 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-26 06:27:03 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on all images of the heaviest аnimаl species'}
-2023-12-26 06:27:04 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on all images of the heaviest animal species.', "This is a picture that don't look like please click on all images of the heaviest animal species."], 'prompt': 'Please click on all images of the heaviest аnimаl species', 'timit': '0.952s'}
-2023-12-26 06:27:14 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-26 06:27:46 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-outer-worlds-spacers-choice-edition'}
-2023-12-26 06:27:54 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-26 06:27:56 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-26 06:28:01 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on all images of the heaviest animal sрecies'}
-2023-12-26 06:28:02 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on all images of the heaviest animal species.', "This is a picture that don't look like please click on all images of the heaviest animal species."], 'prompt': 'Please click on all images of the heaviest animal sрecies', 'timit': '0.739s'}
-2023-12-26 06:28:12 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-26 06:28:15 | ERROR    | hcaptcha_challenger.agents.playwright.control:handler:153 | Expecting value: line 1 column 1 (char 0) - {}
-Traceback (most recent call last):
-  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 162, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/hcaptcha_challenger/agents/playwright/control.py", line 145, in handler
-    data = await response.json()
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 636, in json
-    return mapping.from_maybe_impl(await self._impl_obj.json())
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/site-packages/playwright/_impl/_network.py", line 590, in json
-    return json.loads(await self.text())
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/json/__init__.py", line 346, in loads
-    return _default_decoder.decode(s)
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/opt/hostedtoolcache/Python/3.10.13/x64/lib/python3.10/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-2023-12-26 06:28:44 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/the-outer-worlds-spacers-choice-edition'}
-2023-12-26 06:28:53 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2023-12-26 06:28:55 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2023-12-26 06:29:00 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on the object tһat is different'}
-2023-12-26 06:29:06 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2023-12-26 06:29:38 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3649), thread 'MainThread' (140451541691264): - {}
+2023-12-27 06:26:37 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2023-12-27 06:26:44 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Human Resource Machine', 'url': 'https://store.epicgames.com/en-US/p/human-resource-machine'}
+2023-12-27 06:26:49 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/human-resource-machine'}
+2023-12-27 06:27:00 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-27 06:27:03 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-27 06:27:08 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Ρlease clіck on all images of the heaviest animal sрecies'}
+2023-12-27 06:27:09 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like ρlease click on all images of the heaviest animal species.', "This is a picture that don't look like ρlease click on all images of the heaviest animal species."], 'prompt': 'Ρlease clіck on all images of the heaviest animal sрecies', 'timit': '0.950s'}
+2023-12-27 06:27:19 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-27 06:27:51 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/human-resource-machine'}
+2023-12-27 06:27:59 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-27 06:28:01 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-27 06:28:06 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on аll images of tһe һeaviest animal specieѕ'}
+2023-12-27 06:28:07 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on all images of the heaviest animal species.', "This is a picture that don't look like please click on all images of the heaviest animal species."], 'prompt': 'Please click on аll images of tһe һeaviest animal specieѕ', 'timit': '0.781s'}
+2023-12-27 06:28:17 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-27 06:28:49 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/human-resource-machine'}
+2023-12-27 06:28:57 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2023-12-27 06:28:59 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2023-12-27 06:29:04 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Pleаse click on all imаges of tһe heaviest animal species'}
+2023-12-27 06:29:05 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on all images of the heaviest animal species.', "This is a picture that don't look like please click on all images of the heaviest animal species."], 'prompt': 'Pleаse click on all imаges of tһe heaviest animal species', 'timit': '0.701s'}
+2023-12-27 06:29:13 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2023-12-27 06:29:45 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3634), thread 'MainThread' (140413138774912): - {}
 Traceback (most recent call last):
   File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 151, in stash
     await self.claim_epic_games(context)

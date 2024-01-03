@@ -1,28 +1,28 @@
-2024-01-03 06:27:23 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-01-03 06:27:34 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
-2024-01-03 06:27:36 | SUCCESS    | epic_games.agent:_login:253 | login - {'result': 'Successfully refreshed tokens'}
-2024-01-03 06:27:47 | SUCCESS    | epic_games.agent:flush_token:280 | flush_token - {'path': PosixPath('/home/runner/work/baipiao/baipiao/epic/user_data_dir/epic-games@934175043/ctx_cookie.json')}
-2024-01-03 06:27:48 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
-2024-01-03 06:27:48 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': '20 Minutes Till Dawn', 'url': 'https://store.epicgames.com/en-US/p/20-minutes-till-dawn-be3305'}
-2024-01-03 06:27:48 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/20-minutes-till-dawn-be3305'}
-2024-01-03 06:27:59 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2024-01-03 06:28:02 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2024-01-03 06:28:07 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on all images of the heaviest animal sрecies'}
-2024-01-03 06:28:08 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on all images of the heaviest animal species.', "This is a picture that don't look like please click on all images of the heaviest animal species."], 'prompt': 'Please click on all images of the heaviest animal sрecies', 'timit': '0.976s'}
-2024-01-03 06:28:18 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2024-01-03 06:28:51 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/20-minutes-till-dawn-be3305'}
-2024-01-03 06:28:59 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2024-01-03 06:29:02 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2024-01-03 06:29:07 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Ρlease click on all images of the heaviest animal sрecies'}
-2024-01-03 06:29:08 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like ρlease click on all images of the heaviest animal species.', "This is a picture that don't look like ρlease click on all images of the heaviest animal species."], 'prompt': 'Ρlease click on all images of the heaviest animal sрecies', 'timit': '0.749s'}
-2024-01-03 06:29:19 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2024-01-03 06:29:51 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/20-minutes-till-dawn-be3305'}
-2024-01-03 06:29:59 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
-2024-01-03 06:30:02 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
-2024-01-03 06:30:07 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on all images of tһe heaviest animal specіes'}
-2024-01-03 06:30:08 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on all images of the heaviest animal species.', "This is a picture that don't look like please click on all images of the heaviest animal species."], 'prompt': 'Please click on all images of tһe heaviest animal specіes', 'timit': '0.693s'}
-2024-01-03 06:30:19 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
-2024-01-03 06:30:51 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3578), thread 'MainThread' (140095663430528): - {}
+2024-01-04 06:27:31 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-01-04 06:27:39 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
+2024-01-04 06:27:42 | SUCCESS    | epic_games.agent:_login:253 | login - {'result': 'Successfully refreshed tokens'}
+2024-01-04 06:27:52 | SUCCESS    | epic_games.agent:flush_token:280 | flush_token - {'path': PosixPath('/home/runner/work/baipiao/baipiao/epic/user_data_dir/epic-games@934175043/ctx_cookie.json')}
+2024-01-04 06:27:52 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
+2024-01-04 06:27:52 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'A Plague Tale: Innocence', 'url': 'https://store.epicgames.com/en-US/p/a-plague-tale-innocence'}
+2024-01-04 06:27:52 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/a-plague-tale-innocence'}
+2024-01-04 06:28:01 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2024-01-04 06:28:04 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2024-01-04 06:28:09 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please clіck on all images of the heаviest animal species'}
+2024-01-04 06:28:10 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on all images of the heaviest animal species.', "This is a picture that don't look like please click on all images of the heaviest animal species."], 'prompt': 'Please clіck on all images of the heаviest animal species', 'timit': '0.955s'}
+2024-01-04 06:28:20 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2024-01-04 06:28:52 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/a-plague-tale-innocence'}
+2024-01-04 06:29:00 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2024-01-04 06:29:03 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2024-01-04 06:29:08 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Please click on all images of the hеaviest animal species'}
+2024-01-04 06:29:08 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like please click on all images of the heaviest animal species.', "This is a picture that don't look like please click on all images of the heaviest animal species."], 'prompt': 'Please click on all images of the hеaviest animal species', 'timit': '0.721s'}
+2024-01-04 06:29:20 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2024-01-04 06:29:52 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/a-plague-tale-innocence'}
+2024-01-04 06:30:00 | INFO    | epic_games.agent:claim_weekly_games:326 | claim_weekly_games - {'action': 'move to webPurchaseContainer iframe'}
+2024-01-04 06:30:02 | INFO    | epic_games.agent:claim_weekly_games:328 | claim_weekly_games - {'action': 'click payment button'}
+2024-01-04 06:30:07 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_parse_label:241 | get task - {'prompt': 'Ρlease сliсk on all images of the heаviest animal speciеs'}
+2024-01-04 06:30:08 | DEBUG    | hcaptcha_challenger.agents.playwright.control:_catch_all_binary_challenge:474 | handle task - {'unsupervised': 'binary', 'candidate_labels': ['This is a picture that looks like ρlease click on all images of the heaviest animal species.', "This is a picture that don't look like ρlease click on all images of the heaviest animal species."], 'prompt': 'Ρlease сliсk on all images of the heаviest animal speciеs', 'timit': '0.707s'}
+2024-01-04 06:30:20 | DEBUG    | epic_games.agent:insert_challenge:106 | task done - {'sattus': 'success'}
+2024-01-04 06:30:51 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3660), thread 'MainThread' (140369249233792): - {}
 Traceback (most recent call last):
   File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 151, in stash
     await self.claim_epic_games(context)

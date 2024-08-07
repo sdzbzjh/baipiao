@@ -1,32 +1,7 @@
-2024-08-07 06:30:58 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-08-07 06:31:02 | ERROR    | hcaptcha_challenger.onnx.modelhub:flush_runtime_assets:190 | 0 - {}
-2024-08-07 06:31:02 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
-2024-08-07 06:31:05 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=L2iMLPXn7LKbgTBhlqBymOUmgaxIZFmUk0BHkXl4pWA-1722983464-0.0.1.1-5567'}
-2024-08-07 06:31:35 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 0}
-2024-08-07 06:31:37 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=JUK7qbHyjcwgQDPj3TF_5jQnoDKPwi0iZX_qTzaYktQ-1722983497-0.0.1.1-6463'}
-2024-08-07 06:32:07 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 1}
-2024-08-07 06:32:10 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=0oqYY5CoyHRlP049vKGUzXwrecKu.SqHFmr_U5iHgJc-1722983530-0.0.1.1-6484'}
-2024-08-07 06:32:40 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 2}
-2024-08-07 06:32:40 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3745), thread 'MainThread' (140519708117888): - {}
-Traceback (most recent call last):
-  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 162, in <module>
-    asyncio.run(run())
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
-    self.run_forever()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
-    self._run_once()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
-    handle._run()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/asyncio/events.py", line 80, in _run
-    self._context.run(self._callback, *self._args)
-> File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 158, in run
-    await agent.stash()
-  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 151, in stash
-    await self.claim_epic_games(context)
-  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 98, in claim_epic_games
-    if await epic.authorize(page):
-  File "/home/runner/work/baipiao/baipiao/epic/src/epic_games/agent.py", line 269, in authorize
-    raise RuntimeError(f"Failed to flush token - agent={self.__class__.__name__}")
-RuntimeError: Failed to flush token - agent=EpicGames
+2024-08-08 06:30:58 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-08-08 06:31:04 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
+2024-08-08 06:31:04 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'LumbearJack', 'url': 'https://store.epicgames.com/en-US/p/lumbearjack-b5bedf'}
+2024-08-08 06:31:04 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'RAWMEN: Food Fighter Arena 🍜', 'url': 'https://store.epicgames.com/en-US/p/rawmen-03f74e'}
+2024-08-08 06:31:09 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/lumbearjack-b5bedf'}
+2024-08-08 06:31:24 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/rawmen-03f74e'}
+2024-08-08 06:31:37 | SUCCESS    | epic_games.agent:claim_weekly_games:314 | Pass claim task - {'reason': 'Free games not added to shopping cart'}

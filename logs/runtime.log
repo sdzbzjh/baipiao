@@ -1,14 +1,12 @@
-2024-09-04 06:32:36 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
-2024-09-04 06:32:42 | WARNING    | epic_games.agent:get_order_history:467 | Failed to get order history, cookie may have expired - {}
-2024-09-04 06:32:42 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Wild Card Football', 'url': 'https://store.epicgames.com/en-US/p/wild-card-football'}
-2024-09-04 06:32:42 | DEBUG    | __main__:create_tasks:66 | Put task - {'title': 'Fallout® Classic Collection', 'url': 'https://store.epicgames.com/en-US/bundles/fallout-classic-collection'}
-2024-09-04 06:32:47 | INFO    | epic_games.agent:claim_weekly_games:294 | claim_weekly_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/p/wild-card-football'}
-2024-09-04 06:33:22 | SUCCESS    | epic_games.agent:claim_weekly_games:314 | Pass claim task - {'reason': 'Free games not added to shopping cart'}
-2024-09-04 06:33:22 | INFO    | epic_games.agent:claim_bundle_games:351 | claim_bundle_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/bundles/fallout-classic-collection'}
-2024-09-04 06:33:38 | INFO    | epic_games.agent:claim_bundle_games:372 | claim_bundle_games - {'action': 'move to webPurchaseContainer iframe'}
-2024-09-04 06:33:51 | INFO    | epic_games.agent:claim_bundle_games:351 | claim_bundle_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/bundles/fallout-classic-collection'}
-2024-09-04 06:34:22 | INFO    | epic_games.agent:claim_bundle_games:351 | claim_bundle_games - {'action': 'go to store', 'url': 'https://store.epicgames.com/en-US/bundles/fallout-classic-collection'}
-2024-09-04 06:34:52 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3791), thread 'MainThread' (139966310800256): - {}
+2024-09-05 06:31:30 | INFO    | __main__:stash:131 | run - {'image': '20231121', 'version': '0.10.1.post2', 'role': 'EpicPlayer', 'headless': True}
+2024-09-05 06:31:39 | INFO    | __main__:claim_epic_games:97 | Try to flush cookie - {'task': 'claim_epic_games'}
+2024-09-05 06:31:42 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=N5meM7b4KTO80qjwsmc8IpTg7z..Ggoy.OELMvSAq6w-1725489102-0.0.1.1-6633'}
+2024-09-05 06:32:12 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 0}
+2024-09-05 06:32:14 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=dU.I8Y9rQBlcCsIEzb3fvMijb_nexRgQibPUFmsy0H8-1725489134-0.0.1.1-7551'}
+2024-09-05 06:32:44 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 1}
+2024-09-05 06:32:47 | INFO    | epic_games.agent:_login:237 | login-with-email - {'url': 'https://www.epicgames.com/id/login?lang=en-US&noHostRedirect=true&redirectUrl=https://store.epicgames.com/en-US/free-games&__cf_chl_rt_tk=vJaMFjmuG1jqaT0C.CtfqQJ_2AHva47J_KaP1Ea75Jk-1725489167-0.0.1.1-7529'}
+2024-09-05 06:33:17 | WARNING    | epic_games.agent:authorize:266 | 执行超时 - {'task': 'authorize', 'retry': 2}
+2024-09-05 06:33:17 | ERROR    | __main__:run:158 | An error has been caught in function 'run', process 'MainProcess' (3609), thread 'MainThread' (139769191209856): - {}
 Traceback (most recent call last):
   File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 162, in <module>
     asyncio.run(run())
@@ -26,39 +24,8 @@ Traceback (most recent call last):
     await agent.stash()
   File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 151, in stash
     await self.claim_epic_games(context)
-  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 124, in claim_epic_games
-    await epic.claim_bundle_games(page, bundle_promotions)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 189, in async_wrapped
-    return await copy(fn, *args, **kwargs)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
-    do = await self.iter(retry_state=retry_state)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
-    result = await action(retry_state)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/_utils.py", line 99, in inner
-    return call(*args, **kwargs)
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/__init__.py", line 418, in exc_check
-    raise retry_exc.reraise()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/__init__.py", line 185, in reraise
-    raise self.last_attempt.result()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/concurrent/futures/_base.py", line 451, in result
-    return self.__get_result()
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
-    raise self._exception
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
-    result = await fn(*args, **kwargs)
-  File "/home/runner/work/baipiao/baipiao/epic/src/epic_games/agent.py", line 352, in claim_bundle_games
-    await page.goto(promotion.url, wait_until="load")
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 8805, in goto
-    await self._impl_obj.goto(
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_page.py", line 524, in goto
-    return await self._main_frame.goto(**locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_frame.py", line 145, in goto
-    await self._channel.send("goto", locals_to_params(locals()))
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 59, in send
-    return await self._connection.wrap_api_call(
-  File "/opt/hostedtoolcache/Python/3.10.14/x64/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 514, in wrap_api_call
-    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
-playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
-Call log:
-navigating to "https://store.epicgames.com/en-US/bundles/fallout-classic-collection", waiting until "load"
-
+  File "/home/runner/work/baipiao/baipiao/epic/src/claim.py", line 98, in claim_epic_games
+    if await epic.authorize(page):
+  File "/home/runner/work/baipiao/baipiao/epic/src/epic_games/agent.py", line 269, in authorize
+    raise RuntimeError(f"Failed to flush token - agent={self.__class__.__name__}")
+RuntimeError: Failed to flush token - agent=EpicGames
